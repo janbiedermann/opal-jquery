@@ -11,5 +11,6 @@ end
 
 RSpec.configure do |config|
   config.include JQueryTestHelpers
-  config.formatter = :doc
+  # config.formatter = :doc
+  # config.color = true
 end
