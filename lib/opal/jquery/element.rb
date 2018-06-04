@@ -49,9 +49,8 @@ require 'opal/jquery/constants'
 #     Element.parse '<div id="title">hello world</div>'
 #     # => #<Element [<div id="title">]>
 #
-class Element < `#{JQUERY_CLASS.to_n}`
-  `var $ = #{JQUERY_SELECTOR.to_n}` # cache $ for SPEED
-
+class Element < `#{JQUERY_CLASS}`
+  `var $ = #{JQUERY_SELECTOR}` # cache $ for SPEED
   include Enumerable
 
   # Find elements by the given css selector.

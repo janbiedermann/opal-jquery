@@ -78,7 +78,7 @@ require 'opal/jquery/constants'
 # - {#status_code} - returns the raw {HTTP} status code as integer
 # - {#json} - tries to convert the body response into a JSON object
 class HTTP
-  `var $ = #{JQUERY_SELECTOR.to_n}` # cache $ for SPEED
+  `var $ = #{JQUERY_SELECTOR}` # cache $ for SPEED
 
   # All valid {HTTP} action methods this class accepts.
   #

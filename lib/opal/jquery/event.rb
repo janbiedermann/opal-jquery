@@ -71,7 +71,7 @@ require 'opal/jquery/constants'
 #     # => true
 #
 class Event
-  `var $ = #{JQUERY_SELECTOR.to_n}` # cache $ for SPEED
+  `var $ = #{JQUERY_SELECTOR}` # cache $ for SPEED
 
   # @private
   # @param native [JSObject] native jquery/javascript event
